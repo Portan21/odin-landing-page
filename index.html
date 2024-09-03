@@ -5,79 +5,91 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link href="style.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
 </head>
 <body>
     <section>
-        <div id="hero">
-            <div id="hero-header" class="flex-container">
-                <ul>
-                    <li id="logo" class="header-content">Header Logo</li>
-                    <li id="header-one" class="header-content">header link one</li>
-                    <li id="header-two" class="header-contnet">header link two</li>
-                    <li id="header-three" class="header-content">header link three</li>
-                </ul>
+        <div id="hero" class="hero flex-container">
+            <div id="hero-header-container" class="hero-header-container flex-container">
+                <div id="hero-logo" class="hero-logo">
+                    <p>Header Logo</p>
+                </div>
+                <div id="hero-header" class="hero-header">
+                    <ul>
+                        <li id="header-one" class="header-link">header link one</li>
+                        <li id="header-two" class="header-link">header link two</li>
+                        <li id="header-three" class="header-link">header link three</li>
+                    </ul>
+                </div>
             </div>
-            <div id="hero-content" class="flex-container">
-                <div id="hero-item1" class="">
-                    <h1>This website is awesome</h1>
-                    <p>This website has some subtext that goes here under the main title. 
+            <div id="hero-content-container" class="hero-content-container flex-container">
+                <div id="hero-item1" class="hero-content">
+                    <h1 id="main-text">This website is awesome</h1>
+                    <p id="secondary-text">This website has some subtext that goes here under the main title. 
                         It's a smaller font and the color is lower contrast
                     </p>
                     <button>Sign Up</button>
                 </div>
-                <div id="hero-item2" class="">
-                    this is a placeholder for an image
+                <div id="hero-item2" class="flexbox-container">
+                    <p class="image-placeholder">this is a placeholder for an image</p>
+                </div>
+            </div>
+        </div>
+        
+    </section>
+
+    <section>
+        <div id="information" class="information flex-container">
+            <div id="information-header">
+                <p>Some random information.</p>
+            </div>
+            <div id="information-image" class="information-image flex-container">
+                <div id="information-item1" class="image flex-container">
+                    <img src="/images/image-box.png" alt="image box placeholder">
+                    <p>this is some subtext under an illustration or image</p>
+                </div>
+                <div id="information-item2" class="image flex-container" alt="image box placeholder">
+                    <img src="/images/image-box.png">
+                    <p>this is some subtext under an illustration or image</p>
+                </div>
+                <div id="information-item3" class="image flex-container" alt="image box placeholder">
+                    <img src="/images/image-box.png">
+                    <p>this is some subtext under an illustration or image</p>
+                </div>
+                <div id="information-item4" class="image flex-container" alt="image box placeholder">
+                    <img src="/images/image-box.png">
+                    <p>this is some subtext under an illustration or image</p>
                 </div>
             </div>
         </div>
     </section>
 
     <section>
-        <div id="information" class="flex-container">
-            <div id="information-header">
-                <h1>Some random information.</h1>
-            </div>
-            <div id="information-item1">
-                <p>this is some subtext under an illustration or image</p>
-            </div>
-            <div id="information-item2">
-                <p>this is some subtext under an illustration or image</p>
-            </div>
-            <div id="information-item3">
-                <p>this is some subtext under an illustration or image</p>
-            </div>
-            <div id="information-item4">
-                <p>this is some subtext under an illustration or image</p>
-            </div>
+        <div id="quote" class="quote flexbox-container">
+            <p class="quote-text">This is a random quote, or a testimonial from a customer. Maybe it's just
+                filling up space, or maybe people will actually read it. Who knows? All
+                I know is that it looks nice.
+            </p>
+            <p class="quote-author">-Thor, God of Thunder</p>
         </div>
     </section>
 
     <section>
-        <div id="quote">
-            <div id="quote-content">
-                <p>This is a random quote, or a testimonial from a customer. Maybe it's just
-                    filling up space, or maybe people will actually read it. Who knows? All
-                    I know is that it looks nice.
-                </p>
-                <p>-Thor, God of Thunder</p>
-            </div>
-        </div>
-    </section>
-
-    <section>
-        <div id="bottom-info">
+        <div class="bottom-content-container flex-container">
             <div id="bottom-content">
-                <p>Call to action! It's Time!</p>
-                <p>Sign for our product by clicking that button right over there!</p>
+                <p class="bottom-main-text">Call to action! It's Time!</p>
+                <p class="bottom-secondary-text">Sign for our product by clicking that button right over there!</p>
             </div>
             <div id="bottom-button">
-                <button>Sign Up</button>
+                <button>Sign up</button>
             </div>
         </div>
     </section>
 
     <footer>
-        <p>Copyright © The Odin Project 2021</p>
+        <div class="footer flexbox-container">
+            <p>Copyright © The Odin Project 2021</p>
+        </div>
     </footer>
 </body>
 </html>
